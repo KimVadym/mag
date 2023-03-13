@@ -137,30 +137,30 @@ img {
   width: 472px;
   height: 553px;
   position: absolute;
-  top: 105px;
-  right: 135px;
+  top: 14%;
+  right: 10%;
   z-index: 10;
 }
 .pic-icon {
   width: 540px;
   height: 418px;
   position: absolute;
-  top: 120px;
-  left: 425px;
+  top: 13%;
+  left: 30%;
 }
 .big-spraying {
   width: 472px;
   height: 553px;
   position: absolute;
-  top: 105px;
-  right: 135px;
+  top: 14%;
+  right: 10%;
 }
 .small-spraying {
   position: absolute;
   width: 290px;
   height: 58px;
-  top: 170px;
-  left: 150px;
+  top: 30%;
+  left: 10%;
 }
 
 /* =================key features================== */
