@@ -17,11 +17,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- ================navigation============= -->
     <header class="header-overlay">
-      <div class="container">
+      <div class="container mobile-men">
         <nav class="navigation">
           <a class="logo link" href="index.html">Mobileapp</a>
           <ul class="header-menu">
@@ -42,8 +43,43 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-btn" data-menu-open>
+          <svg class="mobile-btn-icon" width="24" height="14">
+            <use href="./images/vector.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="menu-wrapper">
+          <button type="button" class="mobile-close-btn" data-menu-close>
+            <svg class="mobile-btn-close" width="19" height="19">
+              <use href="./images/vector.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav>
+            <a class="logo mobile-menu-logo" href="#">Mobileapp</a>
+            <ul class="mobile-menu-wrapp">
+              <li class="mobile-menu-list">
+                <a class="mobile-menu-link" href="#">HOME</a>
+              </li>
+              <li class="mobile-menu-list">
+                <a class="mobile-menu-link" href="#">FEATURES</a>
+              </li>
+              <li class="mobile-menu-list">
+                <a class="mobile-menu-link" href="#">TEAM</a>
+              </li>
+              <li class="mobile-menu-list">
+                <a class="mobile-menu-link" href="#">TESTIMONIALS</a>
+              </li>
+              <li class="mobile-menu-list">
+                <a class="mobile-menu-link" href="#">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
+
     <main>
       <!-- ====================hero=========== -->
       <section class="hero">
@@ -68,14 +104,20 @@
           </div>
 
           <img class="pic-icon" src="./images/decor.png" alt="decor" />
-          <img class="pic-phone" src="./images/mobile.png" width="472" height="553" alt="phone" />
-          <img class="big-spraying" src="./images/big.png" alt="">
-          <img class="small-spraying" src="./images/small.png" alt="">
 
+          <img
+            class="pic-phone"
+            src="./images/mobile.png"
+            width="472"
+            height="553"
+            alt="phone"
+          />
+          <img class="big-spraying" src="./images/big.png" alt="" />
+          <!-- <img class="small-spraying" src="./images/small.png" alt="" /> -->
         </div>
       </section>
       <!-- ==============key features============= -->
-      <section class="about">
+      <!-- <section class="about">
         <div class="container">
           <h2 class="title key">KEY FEATURES</h2>
           <p class="about-subtitel">
@@ -84,22 +126,23 @@
             a vitae felis. Praesent luctus mi quis nisi interdum eleifend.
           </p>
           <div class="about-box">
+            <div class="line"></div>
             <ul class="link">
-              <li>
+              <li class="key-text">
                 <h3 class="text">Amet varius</h3>
                 <p class="text-desc">
                   Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
                   Vivamus diam a iaculis malesuada
                 </p>
               </li>
-              <li>
+              <li class="key-text">
                 <h3 class="text">Amet varius</h3>
                 <p class="text-desc">
                   Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
                   Vivamus diam a iaculis malesuada
                 </p>
               </li>
-              <li>
+              <li class="key-text">
                 <h3 class="text">Amet varius</h3>
                 <p class="text-desc">
                   Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
@@ -114,22 +157,31 @@
               height="601"
               alt="man siting at the cheare"
             />
+
             <ul>
-              <li>
+              <li class="key-text">
+                <img
+                  class="icon"
+                  src="./images/icon.png"
+                  width="28"
+                  height="28"
+                  alt=""
+                />
+                
                 <h3 class="text">Amet varius</h3>
                 <p class="text-desc">
                   Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
                   Vivamus diam a iaculis malesuada
                 </p>
               </li>
-              <li>
+              <li class="key-text">
                 <h3 class="text">Amet varius</h3>
                 <p class="text-desc">
                   Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
                   Vivamus diam a iaculis malesuada
                 </p>
               </li>
-              <li>
+              <li class="key-text">
                 <h3 class="text">Amet varius</h3>
                 <p class="text-desc">
                   Donec posuere augue venenatis, aliquet ligula ut, tempus quam.
@@ -139,9 +191,9 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- ==================video============= -->
-      <section class="video">
+      <!-- <section class="video">
         <div class="container video-container">
           <div class="video-box">
             <h2 class="title vid">WATCH THE VIDEO</h2>
@@ -172,9 +224,9 @@
 
           <img src="./images/iphone.png" width="501" height="282" alt="phone" />
         </div>
-      </section>
+      </section> -->
       <!-- ================our team=============== -->
-      <section class="team">
+      <!-- <section class="team">
         <div class="container">
           <h2 class="title our-team">OUR TEAM</h2>
           <p class="team-descr">
@@ -226,9 +278,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Our costumer's say -->
-      <section class="slider">
+      <!-- <section class="slider">
         <div class="container">
           <h2 class="title cost costumer">What our costumer's say</h2>
           <img
@@ -249,10 +301,10 @@
             tempus. Aenean gravida massa et ante pulvinar, id
           </p>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- ====================footer================= -->
-    <footer>
+    <!-- <footer>
       <div class="container">
         <h2 class="footer-title">CONTACT US</h2>
         <div class="footer-box">
@@ -330,6 +382,7 @@
           &#169; 2019 GoIteens Template. All Rights Reserved
         </p>
       </div>
-    </footer>
+    </footer> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
