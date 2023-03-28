@@ -131,7 +131,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 700px;
+    height: 10;
     z-index: 1000;
     background: #07081c;
     background-image: linear-gradient(#00c5eb, #b544fe);
@@ -208,6 +208,9 @@ img {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
+  }
+  .mmb {
+    width: 100%;
   }
 }
 
@@ -335,6 +338,9 @@ img {
     width: 363px;
     height: 352px;
   }
+  .hero-text-box {
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -409,13 +415,13 @@ img {
     max-height: 409px;
     margin-bottom: 40px;
   }
+  .title {
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--text-color);
+  }
 }
 
-.title {
-  font-size: 24px;
-  line-height: 1.2;
-  color: var(--text-color);
-}
 .key {
   display: flex;
   justify-content: center;
@@ -493,6 +499,9 @@ img {
     bottom: 0;
     left: 0;
   }
+  .title {
+    font-size: 24px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .about {
@@ -559,38 +568,96 @@ img {
 }
 
 /*=================video==============  */
-@media screen and (min-width: 320px) and (max-width: 767px) {
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-}
-
-@media screen and (min-width: 1200px) {
-}
 .video {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background: var(--hero);
 }
-.video-container {
-  display: flex;
-  align-items: center;
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .video {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .vid {
+    margin-bottom: 24px;
+  }
+  .video-descr {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vector-box {
+    margin-bottom: 40px;
+  }
 }
 .vid {
-  margin-bottom: 20px;
   color: #ffffff;
 }
-
 .video-descr {
-  margin-bottom: 40px;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1.18;
   color: var(--main);
-  width: 478px;
 }
 .vector-box {
   display: flex;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .video {
+    padding-top: 80px;
+    padding-bottom: 40px;
+  }
+  .vid {
+    margin-bottom: 20px;
+  }
+  .video-descr {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .video-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vector-box {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .video {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--hero);
+  }
+  .vid {
+    margin-bottom: 20px;
+  }
+  .video-descr {
+    margin-bottom: 40px;
+    font-size: 16px;
+    width: 478px;
+  }
+  .video-container {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .vector-icon {
   display: flex;
   justify-content: center;
@@ -605,41 +672,43 @@ img {
 }
 
 /* ==============our team============ */
-.team {
-  padding-top: 80px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .team {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .our-team {
+    margin-bottom: 24px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .team-descr {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 40px;
+  }
+  .card {
+    width: 280px;
+
+    padding: 16px 16px 24px 16px;
+  }
+
+  .card:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .team-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pic {
+    width: 248px;
+  }
 }
 .our-team {
-  margin-bottom: 80px;
-  display: flex;
-  justify-content: center;
-}
-.team-descr {
-  display: flex;
-  justify-content: center;
-
-  margin-bottom: 80px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
-  color: var(--text-color);
-}
-.team-box {
-  display: flex;
-}
-.card {
-  background: linear-gradient(
-      312.87deg,
-      rgba(0, 197, 235, 0.5) -0.2%,
-      rgba(181, 68, 254, 0.5) 112.66%
-    ),
-    #06071b;
-  backdrop-filter: blur(17.5px);
-  border-radius: 15px;
-  width: calc((100% - 96px) / 4);
-}
-.card:not(:last-child) {
-  margin-right: 32px;
+  color: #000000;
 }
 .name {
   display: flex;
@@ -659,14 +728,87 @@ img {
   text-align: center;
   color: var(--main);
 }
-.pic {
-  max-width: 264px;
-  margin: 14px 12px 20px 12px;
-  border-radius: 10px;
+
+.our-team,
+.team-descr {
+  display: flex;
+  justify-content: center;
 }
-.text-desc {
+.card {
+  background: linear-gradient(
+      312.87deg,
+      rgba(0, 197, 235, 0.5) -0.2%,
+      rgba(181, 68, 254, 0.5) 112.66%
+    ),
+    #06071b;
+  backdrop-filter: blur(17.5px);
+  border-radius: 15px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team {
+    padding-top: 80px;
+    padding-bottom: 35px;
+  }
+  .our-team {
+    margin-bottom: 40px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+  .team-box {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 32px;
+  }
+  .team-descr {
+    margin-bottom: 80px;
+  }
+  .pic {
+    width: 264px;
+    margin: 14px 12px 20px 12px;
+    border-radius: 10px;
+  }
+  /* .card {
+    width: calc((100%-32px) / 2);
+  } */
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 80px;
+  }
+  .our-team {
+    margin-bottom: 80px;
+    font-size: 24px;
+    line-height: 29px;
+    color: #000000;
+  }
+
+  .team-descr {
+    margin-bottom: 80px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--text-color);
+  }
+  .team-box {
+    display: flex;
+  }
+
+  .card:not(:last-child) {
+    margin-right: 32px;
+  }
+  .pic {
+    width: 264px;
+    margin: 14px 12px 20px 12px;
+    border-radius: 10px;
+  }
+}
+
+/* .text-desc {
   width: 220px;
-}
+} */
 /* ==================overlay================== */
 .overlay {
   background-color: rgb(79, 162, 214, 0.6);
