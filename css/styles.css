@@ -518,7 +518,7 @@ img {
     width: 970px;
   }
   .text-desc {
-    /* width: 220px; */
+    width: 220px;
   }
   .about-pic {
     position: absolute;
@@ -964,7 +964,16 @@ footer {
   border-radius: 5px;
   width: 288px;
   height: 40px;
+  border-color: transparent;
+  color: #00c5eb;
 }
+.form-content:hover,
+.form-content:focus {
+  border: 5px solid #e1e109;
+  color: #b544fe;
+  outline: none;
+}
+
 .form-content-text {
   background: #ffffff;
   border-radius: 5px;
@@ -972,6 +981,15 @@ footer {
   height: 162px;
   padding-bottom: 133px;
   padding-left: 8px;
+  resize: none;
+  border-color: transparent;
+  color: #00c5eb;
+}
+.form-content-text:hover + ::placeholder,
+.form-content-text:focus {
+  border: 5px solid #e1e109;
+  color: #b544fe;
+  outline: none;
 }
 .form-text {
   font-weight: 500;
