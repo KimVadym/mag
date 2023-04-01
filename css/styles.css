@@ -79,9 +79,9 @@ a {
     display: none;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1280px;
+    width: 1200px;
   }
 }
 
@@ -309,7 +309,7 @@ a {
   color: var(--hero);
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .hero {
     padding-top: 142px;
     padding-bottom: 143px;
@@ -346,7 +346,7 @@ a {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .hero {
     padding-top: 145px;
     padding-bottom: 146px;
@@ -465,7 +465,7 @@ a {
   height: 28px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .about {
     padding-top: 31px;
     padding-bottom: 22px;
@@ -507,7 +507,7 @@ a {
     font-size: 24px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .about {
     padding: 100px 152px;
   }
@@ -616,7 +616,7 @@ a {
   display: flex;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .video {
     padding-top: 80px;
     padding-bottom: 40px;
@@ -647,7 +647,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .video {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -728,12 +728,11 @@ a {
     border-radius: 15px;
     padding: 16px 16px 12px 16px;
   }
-  .card:not(:last-child) {
-    margin-bottom: 24px;
-  }
+
   .pic {
     margin-bottom: 24px;
   }
+
   .name {
     text-align: center;
     font-size: 18px;
@@ -751,7 +750,13 @@ a {
     color: var(--main);
   }
 }
-@media screen and (min-width: 767px) {
+
+@media screen and (max-width: 767px) {
+  .card:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 768px) {
   .team {
     padding-top: 80px;
   }
@@ -768,13 +773,12 @@ a {
     padding: 20px 20px 20px 16px;
     flex-basis: calc((100% - 32px) / 2);
     width: 336px;
-    height: 409px;
   }
-  .pic {
+  /* .pic {
     width: 296px;
-  }
+  } */
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .team-box {
     display: flex;
     flex-wrap: wrap;
@@ -782,7 +786,7 @@ a {
     row-gap: 40px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   .our-team {
     margin-bottom: 80px;
   }
@@ -1060,7 +1064,7 @@ footer {
     margin-bottom: 80px;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1279px) {
   .footer-left-box {
     display: flex;
     flex-direction: column;
@@ -1068,7 +1072,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
   footer {
     padding-top: 80px;
   }
@@ -1120,8 +1124,9 @@ footer {
   pointer-events: none;
 }
 .modal-window {
+  padding: 36px 40px;
   width: 538px;
-  min-height: 936px;
+  height: 936px;
   background: var(--hero);
   position: absolute;
   top: 50%;
@@ -1156,13 +1161,23 @@ footer {
 
 @media screen and (min-width: 786px) {
   .modal-title {
+    margin-bottom: 28px;
     font-size: 24px;
     line-height: 28px;
   }
   .download-list {
+  }
+  .mod-wrapp {
     display: flex;
+    justify-content: space-between;
     gap: 22px;
   }
+  .mod-wrapp-list {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
   .download-list-page {
     border: 1px solid red;
     border-radius: 6px;
@@ -1200,4 +1215,12 @@ footer {
     fill: var(--main);
     margin-right: 4px;
   }
+}
+.modal-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* or 150% */
+
+  color: #ffffff;
 }
