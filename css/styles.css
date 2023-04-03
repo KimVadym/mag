@@ -5,13 +5,14 @@
   --btn: #ffff00;
   --grad: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
   --border: red;
-}
-body {
-  background: linear-gradient(
+  --main-grad: linear-gradient(
     90.03deg,
     rgba(0, 197, 235, 0.2) -1.97%,
     rgba(181, 68, 254, 0.2) 89.43%
   );
+}
+body {
+  background: var(--main-grad);
   font-family: "Inter" sans-serif;
   font-style: normal;
 }
@@ -468,6 +469,32 @@ a {
   width: 28px;
   height: 28px;
 }
+.tex {
+  position: absolute;
+  left: -35px;
+  top: 10px;
+}
+.tex::before {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 5px;
+  border-radius: 50%;
+  background-image: linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%);
+}
+.tex::after {
+  content: "";
+  display: inline-block;
+  width: 28px;
+  height: 13px;
+  border-radius: 50%;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90.03deg, #00c5eb -1.97%, #b544fe 89.43%) border-box;
+  border: 2px solid transparent;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
   .about {
@@ -565,9 +592,13 @@ a {
 
   .line {
     position: absolute;
-    transform: translate(-3%, -15%);
-    border: 1px dashed var(--border);
 
+    transform: translate(-3%, -15%);
+    /* border: 1px dashed var(--grad); */
+    border-style: dashed;
+    border-width: 1px;
+    border-image: var(--grad) 1;
+    border-color: var(--grad);
     width: 712px;
     height: 523px;
   }
