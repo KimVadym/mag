@@ -56,7 +56,7 @@ a {
 /* ======================header====================== */
 @media screen and (min-width: 320px) {
   .container {
-    width: 320px;
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -68,7 +68,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
   .header-menu {
     display: flex;
@@ -83,7 +83,7 @@ a {
 }
 @media screen and (min-width: 1280px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -1308,6 +1308,7 @@ footer {
     display: flex;
     gap: 8px;
   }
+
   .app-icon-title {
     margin-bottom: 4px;
     font-size: 12px;
