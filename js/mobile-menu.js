@@ -39,7 +39,7 @@
       });
     }
   
-    const menuLinks = document.querySelectorAll(".menu-box-link");
+    const menuLinks = document.querySelectorAll(".mobile-menu-link");
   
     menuLinks.forEach((link) => {
       link.addEventListener("click", toggleMenu);
